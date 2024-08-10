@@ -1,0 +1,21 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "main": "portfolio.js",
+  "scripts": {
+    "start": "parcel portfolio.html",
+    "build": "parcel build portfolio.html --dist-dir ./dist"
+  },
+  "author": "Alfred Mamooe",
+  "license": "ISC",
+  "description": "My portfolio",
+  "dependencies": {
+    "core-js": "^3.38.0",
+    "leaflet": "^1.9.4",
+    "lodash-es": "^4.17.21",
+    "regenerator-runtime": "^0.14.1"
+  },
+  "devDependencies": {
+    "parcel": "^2.12.0"
+  }
+}

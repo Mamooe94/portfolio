@@ -1,0 +1,192 @@
+<!DOCTYPE html><html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MamooePortfolio</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <script src="https://kit.fontawesome.com/b6566fff56.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Header section -->
+      <div id="header">
+        <div class="container">
+            <nav>
+                <h1><span>A</span>lfred.</h1>
+                <ul id="sidemenu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contacts</a></li>
+                    <i class="fa-solid fa-square-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+              <p>WEB DESIGNER & DEVELOPER</p>
+              <h1>I design and develop Experiences that simplify people's lives</h1> 
+              <a href="cv.pdf"  download class="btn btn2">Download CV</a>
+            </div>
+        </div>
+      </div>
+    
+    <!-- ---About section--- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/ral.png" alt="My photo">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p class="sub-para">Hello again, and thank you for stopping by, I am Ts'epang Alfred Mamooe, but for simplicity - I am Alfred. I am a passionate and enthusiastic Frontend developer and freelancer. My journey in web development started 3 years ago, when a friend of mine told me about this thing called "Coding". Ever since I heard the word, and researched about it; I have never looked back.
+
+                        Fast forward today, I have had the privilege to work on very exciting projects and freelanced for clients around the world using a platform called <a href="https://www.upwork.com">Upwork</a> . My main focus now is just to innovate, and bring digital solutions to the world.
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="openTab('skills')">Skills</p>
+                        <p class="tab-links" onclick="openTab('experience')">Experience</p>
+                        <p class="tab-links"onclick="openTab('education')">Education</p>
+                        <p class="tab-links"onclick="openTab('technology')">Technologies</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Development</span><br>Web app Development</li>
+                            <li><span>UI/UX Design</span><br> Designing User Interface applications</li>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2024-Current</span><br>Volunteer at YouVersion</li>
+                            <li><span>2022-Current</span><br>Moderator at Preply</li>
+                            <li><span>2023-2024</span><br>Collaborator at Omdena</li>
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2023</span><br>Web Development Training from 100Devs</li>
+                            <li><span>2022</span><br>BCom. from University of South Africa</li>
+                            <li><span>2017</span><br>Diploma from LAC</li>
+                        </ul>
+            </div>
+                    <div class="tab-contents" id="technology">
+                        <ul>
+                            <li>HTML5</li>
+                            <li>CSS</li>
+                            <li>TAILWIND CSS</li>
+                            <li>REACT</li>
+                            <li>JAVASCRIPT</li>
+                        </ul>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Services section-->
+    <div id="services">
+        <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+            <h2>Web Development</h2>
+            <p>Bringing your vision to life with cutting-edge web development technologies and techniques</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop"></i>
+                <h2>UI/UX Design</h2>
+                <p>Crafting intuitive user-centered, and visually stunning digital experiences</p> 
+                 </div>
+        </div>
+        <div class="process">
+                <p>I delicate myself to presenting my clients with completed projects that not only meet, but exceed their initial vision. Knowing what to expect when we work together is critical- here is how I deliver success:</p>
+                    <div>
+                        <h3>1.Consultation</h3>
+                        <p>It all begins with a conversation where we will pinpoint what this project is all about.</p>
+                    </div>
+                    <div>
+                        <h3>2.Proposal</h3>
+                        <p>A detailed project proposal including a visual preview will be presented and a plan of action will be decided.</p>
+                    </div>
+                    <div>
+                        <h3>3.Creation</h3>
+                        <p>Clients receive regular updates regarding their project status while I create and test it.</p>
+                    </div>
+                    <div>
+                        <h3>4.Launch_&_Support</h3>
+                        <p>Peace of mind is delivered with the final project in the form of available ongoing support.</p>
+                    </div>
+        </div>
+        </div>
+    </div>
+    </div>
+    
+    <!---- Portfolio section -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                   <img src="images/malitha.png">
+                   <div class="layer">
+                    <h3>Nutri-Con</h3>
+                    <p>Client website created using React, CSS, APIs</p>
+                    <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                   </div> 
+                </div>
+                <div class="work">
+                   <img src="images/port.png">
+                   <div class="layer">
+                    <h3>My Portfolio</h3>
+                    <p>One of responsive apps I have worked on using HTML, CSS & JAVASCRIPT</p>
+                    <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                   </div> 
+                </div>
+                <div class="work">
+                   <img src="images/work3.png">
+                   <div class="layer">
+                    <h3>Forkify</h3>
+                    <p>I also collaborated in developing this app and learned alot using HTML, CSS & JAVASCRIPT</p>
+                    <a href="https://forkify-v2.netlify.app"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                   </div> 
+                </div>
+                <div>
+                    <a href="" class="btn">See More</a>
+                </div>
+            </div>
+    </div>
+    
+    <!--  Contacts section -->
+    <div id="contact">
+        <div class="container">
+            <h1 class="sub-title">Let's Connect</h1>
+            <p class="p1">I am currently accepting new freelance clients and interesting project opportunities</p>
+            <div class="row">
+            <div class="contact-left">
+                <b>
+                <p>Contact me at: <br> <i class="fa-solid fa-envelope"></i>  <a href="mailto:tsepangmamooe381@gmail.com"></i>Click here to email me</a><br>
+                or <br> <i class="fa-solid fa-phone"></i> <a href="tel:+27694421936">Call me at +27 69 442 1936</a></p>
+                <div class="social">
+                    <a href="https://www.linkedin.com/in/alfred-mamooe-9abb61281"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://x.com/Tsepang24958181?t=m8Es_69Jj7kDsCSRRhR5Vg&s=08"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/alfredmamooe?igsh=M3Fka3c1cTBjeXpj"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <p><b>You can also send me a quick message here:</b></p>
+                <input type="text" name="Name" placeholder="Enter your name here" required autocomplete="additional-name">
+                <input type="email" name="Email" placeholder="Enter your email here" required autocomplete="given-name">
+                <textarea name="Message" rows="6" placeholder="Enter your message here"></textarea><br>
+                <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="copyright"><p>Copyright<i class="fa-regular fa-copyright"></i> Alfred</p></div>
+    <script type="text/javascript" src="portfolio.js"></script>
+</body>
+</html>
